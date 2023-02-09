@@ -1,11 +1,15 @@
 import { ArrowsClockwise, ChatCircle, Heart } from "phosphor-react"
+import { Link } from 'react-router-dom'
 import { TweetStyle } from "../styles/TweetStyle"
 
+type TweetProps = {
+    content: string
+}
 
-export const Tweet = () => {
+export const Tweet = (props: TweetProps) => {
     return(
         <TweetStyle>
-            <a className="link-tweet" href="#">
+            <Link to={"/status"} className="link-tweet">
                 <img src="https://github.com/victorgarciadss.png" alt="Imagem Victor" />
 
                 <div className="tweet-content">
@@ -15,9 +19,7 @@ export const Tweet = () => {
                     </div>
 
                     <p>
-                        Assisti ontem finalmente Matrix 4, é um misto de sensações que um tweet não pode
-                        descrever, é um dos melhores filmes dos últimos anos, um filme difícil de se entender, não
-                        é melhor que os dois primeiros, mas recupera a franquia depois do fiasco que foi Matrix 3
+                        {props.content}
                     </p>
 
                     <div className="tweet-content-footer">
@@ -37,7 +39,7 @@ export const Tweet = () => {
                         </button>
                     </div>
                 </div>
-            </a>
+            </Link>
         </TweetStyle>
             
         
