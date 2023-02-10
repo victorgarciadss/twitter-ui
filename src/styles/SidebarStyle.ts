@@ -26,6 +26,13 @@ export const SidebarStyle = styled.aside`
         border: none;
     }
 
+    .new-tweet svg{
+        width: 1.5rem;
+        height: 1.5rem;
+        display: none;
+        
+    }
+
     .new-tweet:hover{
         filter: brightness(0.9);
     }
@@ -52,5 +59,23 @@ export const SidebarStyle = styled.aside`
 
     .main-navigation a.active{
         color: var(--twitter-blue);
+    }
+
+    @media (max-width: 780px){
+        padding: 1.5rem 0.75rem;
+        align-items: center;
+
+        .main-navigation a span{
+            display: none;
+        }
+
+
+        .new-tweet span{
+            display: none;
+        }
+        
+        .new-tweet svg{
+            display: block;
+        }
     }
 `

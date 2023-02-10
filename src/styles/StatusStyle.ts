@@ -64,4 +64,24 @@ export const StatusStyle = styled.main`
         border-bottom: 1px solid #ebeef0;
         height: 0.5rem;
     }
+
+    .answer-tweet-form button[type=submit] svg{
+        width: 1.5rem;
+        height: 1.5rem;
+        display: none;
+    }
+
+    @media (max-width: 780px){
+        .answer-tweet-form label textarea{
+            font-size: 1rem;
+        }
+
+        .answer-tweet-form button[type=submit] svg{
+            display: block;
+        }
+
+        .answer-tweet-form button[type=submit] span{
+            display: none;
+        }
+    }
 `

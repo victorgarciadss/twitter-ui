@@ -1,3 +1,4 @@
+import { PaperPlaneRight } from "phosphor-react"
 import { FormEvent, KeyboardEvent, useState } from "react"
 import { HeaderTimeline } from "../components/HeaderTimeline"
 import { Tweet } from "../components/Tweet"
@@ -52,7 +53,10 @@ export const Status = () => {
                     />
                 </label>
 
-                <button type='submit'>Responder</button>
+                <button type='submit'>
+                    <PaperPlaneRight />
+                    <span>Responder</span>
+                </button>
             </form>
 
 
