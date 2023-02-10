@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-tsconfig.node.json
+
 
 src/vite-env.d.ts
 
