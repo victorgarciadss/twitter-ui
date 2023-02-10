@@ -6,15 +6,13 @@ import { Tweet } from '../components/Tweet';
 import { FormEvent, KeyboardEvent, useState } from 'react';
 
 
-
-
 export const Timeline = () => {
 
   const [newTweet, setNewTweet] = useState<string>('');
   const [tweets, setTweets] = useState([
     "Meu primeiro Tweet",
-    "Legal esse lugar",
-    "Show"
+    "Programação é legal",
+    "Senhor dos Anéis é uma obra prima"
   ])
 
   const createNewTweet = (e: FormEvent) => {
